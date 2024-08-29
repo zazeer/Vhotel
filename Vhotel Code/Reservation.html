@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservation</title>
+  <link rel="stylesheet" type="text/css" href="Reservation.css">
+  <script src="Reservation.js" defer></script>
+</head>
+<body>
+    <!-- header -->
+    <section class="header">
+      <nav>
+          <a href="Home page.html"><img src="images/Vhotel Logo2.png"></a>
+          <div class="nav-type", id="navtype">
+              <img href = "" src="Images/close.png" onclick="closeMenu()">
+              <ul>
+                  <li><a href="Home page.html">Home</a></li>
+                  <li><a href="About Us.html">About Us</a></li>
+                  <li><a href="rooms.html">Rooms</a></li>
+                  <li><a href="Facilities.html">Facilities</a></li>
+                  <li><a href="Reservation.html">Reservation</a></li>                        
+              </ul>
+          </div>
+          <img class="menu" href="" src="Images/hamburger menu.png" onclick="openMenu()">
+      </nav>
+  </section>
+
+  <!-- content -->
+  <section class="container">
+    <h2>Reservation Form</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Name:</label>   
+        <input type="text" id="name" name="name" placeholder="Input your name">
+        <span id="nameerror"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="name">Age:</label>   
+        <input type="number" id="age" name="age" placeholder="Input your age">
+        <span id="ageerror"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Input your email">
+        <span id="emailerror"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Input your phone number">
+        <span id="phoneerror"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="checkin">Check-in Date:</label>
+        <input type="date" id="checkin" name="checkin">
+        <span id="checkinerror"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="checkout">Check-out Date:</label>
+        <input type="date" id="checkout" name="checkout">
+        <span id="checkouterror"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="roomType">Room Type:</label>
+        <select id="roomType" name="roomType">
+          <option value="">Choose room type</option>
+          <option value="single">Single</option>
+          <option value="double">Double</option>
+          <option value="suite">Suite</option>
+        </select>
+        <span id="roomtypeerror"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="payment">Payment Method:</label>
+        <select id="payment" name="payment">
+          <option value="">Chose payment method</option>
+          <option value="debit">E-banking</option>
+          <option value="ewallet">E-Wallet</option>
+        </select>
+        <span id="paymenterror"></span>
+      </div>
+
+      <div class="form-group">
+        <button type="button" onclick="validation()">Submit</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- footer -->
+  <section class="footer">
+        <div class="footer-content">
+            <img class="footerlogo" src="Images/Vhotel Logo2.png">
+            <div class="footertext">
+                <h4>Address</h4>      
+                <div class="footertextcontent">
+                    <img src="Images/Address.png">
+                    <p>Tangerang</p>
+                </div>
+                <div class="footertextcontent">
+                    <img src="Images/Phone.png">
+                    <p>123 456 789</p>
+                </div>
+                <div class="footertextcontent">
+                    <img src="Images/Email.png">
+                    <p>vhotel@gmail.com</p>
+                </div>
+            </div>
+            <div class="footertext2">
+                <h4>Information</h4>      
+                <div class="footertextcontent">
+                    <p>About Us</p>
+                </div>
+                <div class="footertextcontent">
+                    <p>Privacy Policy</p>
+                </div>
+                <div class="footertextcontent">
+                    <p>Terms & Condition</p>
+                </div>
+                <div class="footertextcontent">
+                    <p>Site Map</p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="sociallogo">
+            <img src="Images/Facebook.png">
+            <img src="Images/Instagram.png">
+            <img src="Images/Twitter.png">
+        </div>
+    </section>
+
+    <script src="header.js"></script>
+</body>
+</html>
